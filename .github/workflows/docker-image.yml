@@ -4,10 +4,11 @@ on:
   push:
     tags:
       - v*
+  workflow_dispatch:  # ← 添加这行
 
 env:
   APP_NAME: CLIProxyAPI
-  DOCKERHUB_REPO: eceasy/cli-proxy-api
+  DOCKERHUB_REPO: wxiying/cliproxyapi  # ← 修改这里
 
 jobs:
   docker_amd64:
